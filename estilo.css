@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding:  0 0;
+    width: 100%;
+}
+
+.header {
+    background-image: linear-gradient(100deg, rgba(213, 88, 200, 0.644) 0%, rgba(36, 210, 146, 0.678) 100%)  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+  #menu li>a{
+    color: white;
+    filter: opacity(80); 
+    opacity: .8;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    min-width: 100px;
+    
+  }
+  #menu li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    float: left;
+    text-align:center;
+    
+  }
+  #menu>li>ul{
+    display: none;  
+    color: black;
+  }
+  #menu>li:hover>ul {
+    display:block;
+  }
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 80px;
+    color: black;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: blue;
+    transition: 0.5s;
+
+}
+
+.titulo {
+    text-align: center;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+#boton{
+    font-size: 25px;
+}
+
+#boton { text-decoration: none;
+color: white;
+background-color: black;
+padding: 12px;
+border-radius:30px ;
+animation: animacionboton 4s ease-in
+}
+@keyframes animacionboton{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+#boton :hover{
+background-color: white;
+color: #33ffaf;
+transition: 0.5s ease-in-out;
+}
+
+
+.footer {
+    background-image: linear-gradient(100deg, rgba(213, 88, 200, 0.644) 0%, rgba(36, 210, 146, 0.678) 100%);
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-right: none;
+    margin-left: none;
+
+}
+
+#detail { background-image:linear-gradient(100deg, rgba(130, 53, 175, 0.644) 0%, rgba(36, 210, 146, 0.678) 100%);
+padding-top: 5%;
+padding-bottom: 20%;
+min-height: calc(100vh - 40px - 20px); 
+
+}
+
+@keyframes movimiento{
+
+	from{
+background-position: bottom left ;
+	}to{
+background-position: top right;
+	}
+}
+#detail h1{
+    color: white;
+     text-align: center;  
+}
+#detail h2{
+    color: white; 
+    text-align: center;  
+}
+#detail p{
+    color: white; 
+    text-align: center;  
+}
+#detail a{
+    
+    color: white;
+    
+}
+
+.info {margin-top: 85px;
+font-family: 'Big Shoulders Inline Display', cursive;
+letter-spacing: 2px;
+}
+.btn{
+    color: #0769e9;
+    background: transparent;
+    border: 2px solid #0769e9;
+    border-radius: 6px;
+
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.list{
+    text-align: center; color: white;;
+    display: inline-block;
+    color: white;
+}
+/*Responsive*/
+@media(max-width: 768px) {
+    
+    #detail {background-image: linear-gradient(100deg, rgba(213, 88, 200, 0.644) 0%, rgba(36, 210, 146, 0.678) 100%);;}
+    body {
+        padding-top: 70px;
+    }
+    /* Imagen en movimiento ( no sé cómo hacer para que  desaparezca en el resposive) */
+    /*{width: 100%;
+    height: 660px;
+    background-image: url(header\ en\ movimiento.jpg);
+    background-size: 150%;
+    animation: movimiento 50s linear infinite alternate;
+    position: relative; 
+}
+
+@keyframes movimiento{
+
+	from{
+background-position: bottom left ;
+	}to{
+background-position: top right;
+	}*/
+    .header { 
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: lightslategray;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link {
+        padding: 8px 12px;
+        border-radius: 3px;
+
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #83c5f7;
+
+    }
+
+    .nav-toggle {
+        color: rgb(20, 13, 13);
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    
+/*para metodo responsive con javascript*/
+    .nav-menu_visible {
+        left: 0;
+    }
+
+}
+
+
+
+.cajaRock{
+
+    flex-direction: column;
+    align-items: center;
+
+}
