@@ -288,5 +288,9 @@ background-position: top right;
 
 }
 .fotoartista{
-margin-left: 630px;
+margin-left: 350px;
+}
+.acciones{
+display: block;
+border-style: solid red 3px;
 }
