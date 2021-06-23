@@ -30,27 +30,14 @@ fetch (apiPlaylist)
     botonPlay = document.querySelector(".btnPlay");
 
     Fav1 = document.querySelector(".fav1")
-    Fav2 = document.querySelector(".fav2")
-    Fav3 = document.querySelector(".fav3")
-    Fav4 = document.querySelector(".fav4")
+   
 
 
     let fotoFav1 = JSON.parse(localStorage.getItem('foto1'))
     let nombreFav1 = JSON.parse(localStorage.getItem('nombre1'))
     Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <img src="${fotoFav1}">`
 
-    let fotoFav1 = JSON.parse(localStorage.getItem('foto2'))
-    let nombreFav1 = JSON.parse(localStorage.getItem('nombre2'))
-    Fav2.innerHTML += ` <h2>${nombreFav2}</h2> <img src="${fotoFav2}">`
-
-    let fotoFav1 = JSON.parse(localStorage.getItem('foto3'))
-    let nombreFav1 = JSON.parse(localStorage.getItem('nombre3'))
-    Fav3.innerHTML += ` <h2>${nombreFav3}</h2> <img src="${fotoFav3}">`
-
-    let fotoFav1 = JSON.parse(localStorage.getItem('foto4'))
-    let nombreFav1 = JSON.parse(localStorage.getItem('nombre4'))
-    Fav4.innerHTML += ` <h2>${nombreFav4}</h2> <img src="${fotoFav4}">`
-
+   
 
 
 

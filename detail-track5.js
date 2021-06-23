@@ -20,31 +20,6 @@ fetch (apiPlaylist)
     .then(function(datos){
     console.log(datos)
    
-    fotoAr = document.querySelector(".fotoartista");
-    nombreAr = document.querySelector(".nombreartista");
-    nombreCancion = document.querySelector(".nombrecancion");
-    nombreDisco = document.querySelector(".nombredisco");
-    musicPlayer = document.querySelector(".musicplayer");
-    botonPlay = document.querySelector(".btnPlay")
-
-
-
-
-    fotoAr.innerHTML +=`
-    <img src="${datos.tracks.data[1].album.cover_medium}">`;
-    
-    nombreCancion.innerHTML +=`<h2>${datos.tracks.data[1].title}</h2>`;
-    nombreAr.innerHTML +=`<h2>${datos.tracks.data[1].artist.name}</h2>`;
-    nombreDisco.innerHTML += `<h2>${datos.tracks.data[1].album.title}</h2>`;
-    musicPlayer.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.tracks.data[1].id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
-    botonPlay.addEventListener('click', function(e){
-    e.preventDefault();
-    localStorage.setItem('foto1' , JSON.stringify(`${datos.tracks.data[1].album.cover_medium}`));
-    localStorage.setItem('nombre1' , JSON.stringify(`${datos.tracks.data[1].title}`));
-
-    
-    
-    })
     fotoAr2 = document.querySelector(".fotoartista2");
     nombreAr2 = document.querySelector(".nombreartista2");
     nombreCancion2 = document.querySelector(".nombrecancion2");
@@ -52,10 +27,7 @@ fetch (apiPlaylist)
     musicPlayer2 = document.querySelector(".musicplayer2");
     botonPlay2 = document.querySelector(".btnPlay2")
 
-
-
-
-    fotoAr2.innerHTML +=`
+  fotoAr2.innerHTML +=`
     <img src="${datos.tracks.data[0].album.cover_medium}">`;
     
     nombreCancion2.innerHTML +=`<h2>${datos.tracks.data[0].title}</h2>`;
@@ -70,50 +42,5 @@ fetch (apiPlaylist)
     .catch(function(error){
 console.log(error)
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 })

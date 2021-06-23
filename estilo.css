@@ -295,6 +295,33 @@ margin-left: 41%;
 
 
 }
+.fotoartista2{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+      
+}
+.fotoartista3{
+border: 40px;
+border-color: aqua;
+justify-content: center;
+margin-left: 41%;       
+        
+}
+.fotoartista4{
+border: 40px;
+border-color: aqua;
+justify-content: center;
+margin-left: 41%;
+                       
+}
+.fotoartista5{
+border: 40px;
+border-color: aqua;
+justify-content: center;
+margin-left: 41%;
+}
 .acciones{
 display: block;
 border-style: solid red 3px;
