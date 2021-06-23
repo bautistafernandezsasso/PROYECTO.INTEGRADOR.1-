@@ -40,7 +40,8 @@ let botonSacar = document.querySelector('.sacarfav1');
      botonSacar.addEventListener('click', function(){
         localStorage.removeItem('foto1');
         localStorage.removeItem('nombre1');
-        botonSacar.innerText = "Removed!";
+        (window.location.reload())
+       botonSacar.innerText = "Removed!";
         botonSacar.style.color = "red";
     });
 
