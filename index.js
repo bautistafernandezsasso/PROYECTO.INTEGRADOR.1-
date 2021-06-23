@@ -14,6 +14,31 @@ const proxy = 'https://cors-anywhere.herokuapp.com/';
 let api = `${proxy}https://api.deezer.com/genre/152`; /*genero: rock */
 
 
+let buscador = document.querySelector("#form2")
+buscador.addEventListener('search', function(e) {
+    e.preventDefault();
+    alert ("Debes escribir!");
+ if ( buscador.value < 3 || buscador.value === ""){ 
+    
+ } else{ 
+    alert ("Debes escribir más de 3 caracteres");
+ }
+
+ 
+    
+ 
+
+ 
+ 
+ 
+     
+   
+ 
+
+ /*<*/
+    
+
+})
 /*
 
 fetch(api)
