@@ -21,24 +21,36 @@ fetch (apiPlaylist)
     })
     .then(function(datos){
     console.log(datos)
-   
-    fotoAr = document.querySelector(".fotoartista");
-    nombreAr = document.querySelector(".nombreartista");
-    nombreCancion = document.querySelector(".nombrecancion");
-    nombreDisco = document.querySelector(".nombredisco");
-    musicPlayer = document.querySelector(".musicplayer");
-    botonPlay = document.querySelector(".btnPlay");
 
     Fav1 = document.querySelector(".fav1")
    
-
+let botonSacar = document.querySelector('.sacarfav1');
 
     let fotoFav1 = JSON.parse(localStorage.getItem('foto1'))
     let nombreFav1 = JSON.parse(localStorage.getItem('nombre1'))
-    Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <img src="${fotoFav1}">`
 
+    /*if(localStorage.getItem(nombreFav1) != 'null'){
+        Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
+    }else{
+        Fav1.innerHTML += ` <h2></h2> <a href=""> <img src=""> </a> `
+    }*/
+    
+    Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
+    
+     botonSacar.addEventListener('click', function(){
+        localStorage.removeItem('foto1');
+        localStorage.removeItem('nombre1');
+        botonSacar.innerText = "Removed!";
+        botonSacar.style.color = "red";
+    });
+
+    Fav2 = document.querySelector(".fav2")
    
 
+
+    let fotoFav2 = JSON.parse(localStorage.getItem('foto2'))
+    let nombreFav2 = JSON.parse(localStorage.getItem('nombre2'))
+    Fav2.innerHTML += ` <h2>${nombreFav2}</h2> <a href="detail-track-2.html"> <img src="${fotoFav2}"> </a> `
 
 
 

@@ -20,20 +20,20 @@ fetch (apiPlaylist)
     .then(function(datos){
     console.log(datos)
    
-    fotoAr2 = document.querySelector(".fotoartista2");
-    nombreAr2 = document.querySelector(".nombreartista2");
-    nombreCancion2 = document.querySelector(".nombrecancion2");
-    nombreDisco2 = document.querySelector(".nombredisco2");
-    musicPlayer2 = document.querySelector(".musicplayer2");
-    botonPlay2 = document.querySelector(".btnPlay2")
+    fotoAr4 = document.querySelector(".fotoartista4");
+    nombreAr4 = document.querySelector(".nombreartista4");
+    nombreCancion4 = document.querySelector(".nombrecancion4");
+    nombreDisco4 = document.querySelector(".nombredisco4");
+    musicPlayer4 = document.querySelector(".musicplayer4");
+    botonPlay4 = document.querySelector(".btnPlay4")
 
-  fotoAr2.innerHTML +=`
-    <img src="${datos.tracks.data[0].album.cover_medium}">`;
+  fotoAr4.innerHTML +=`
+    <img src="${datos.tracks.data[3].album.cover_medium}">`;
     
-    nombreCancion2.innerHTML +=`<h2>${datos.tracks.data[0].title}</h2>`;
-    nombreAr2.innerHTML +=`<h2>${datos.tracks.data[0].artist.name}</h2>`;
-    nombreDisco2.innerHTML += `<h2>${datos.tracks.data[0].album.title}</h2>`;
-    musicPlayer2.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.tracks.data[0].id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
+    nombreCancion4.innerHTML +=`<h2>${datos.tracks.data[3].title}</h2>`;
+    nombreAr4.innerHTML +=`<h2>${datos.tracks.data[3].artist.name}</h2>`;
+    nombreDisco4.innerHTML += `<h2>${datos.tracks.data[3].album.title}</h2>`;
+    musicPlayer4.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.tracks.data[3].id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
 
 
     

@@ -34,7 +34,11 @@ fetch (apiPlaylist)
     nombreAr2.innerHTML +=`<h2>${datos.tracks.data[0].artist.name}</h2>`;
     nombreDisco2.innerHTML += `<h2>${datos.tracks.data[0].album.title}</h2>`;
     musicPlayer2.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.tracks.data[0].id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
-
+    botonPlay2.addEventListener('click', function(e){
+        e.preventDefault();
+        localStorage.setItem('foto2' , JSON.stringify(`${datos.tracks.data[0].album.cover_medium}`));
+        localStorage.setItem('nombre2' , JSON.stringify(`${datos.tracks.data[0].title}`));
+    
 
     
 
@@ -44,3 +48,5 @@ console.log(error)
     })
 
 })
+
+});
