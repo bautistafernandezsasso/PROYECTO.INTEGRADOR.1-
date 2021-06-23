@@ -288,9 +288,35 @@ background-position: top right;
 
 }
 .fotoartista{
-margin-left: 350px;
+border: 40px;
+border-color: aqua;
+justify-content: center;
+margin-left: 41%;
+
+
 }
 .acciones{
 display: block;
 border-style: solid red 3px;
+
 }
+
+
+
+
+.aaa{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.aaa2{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.musicplayer{
+    justify-content: center;
+}
+
