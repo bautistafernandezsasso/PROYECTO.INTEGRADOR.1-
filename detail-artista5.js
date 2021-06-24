@@ -17,7 +17,7 @@ const proxy = 'https://cors-anywhere.herokuapp.com/';
 /* apiArtista = `${proxy}https://api.deezer.com/artist/${IdArtista}/`
 apiArtistaCanciones = `${proxy}https://api.deezer.com/artist/${IdArtista}/top` */
 
-apiArtista5 = `${proxy}https://api.deezer.com/artist/246791/`
+apiArtista5 = `${proxy}https://api.deezer.com/artist/15166511/`
 
 
 fetch(apiArtista5)

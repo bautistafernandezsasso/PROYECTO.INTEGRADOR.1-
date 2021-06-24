@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
 
    const proxy = `https://cors-anywhere.herokuapp.com/`;
 
-let apiAlbums = `${proxy}https://api.deezer.com/album/125209`;
+let apiAlbums = `${proxy}https://api.deezer.com/album/100896762`;
 
 fetch (apiAlbums)                                           
     .then(function(response){
