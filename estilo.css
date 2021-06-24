@@ -322,6 +322,62 @@ border-color: aqua;
 justify-content: center;
 margin-left: 41%;
 }
+.fotoartist{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+}
+.fotoartist1{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+}
+.fotoartist2{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+}
+.fotoartist3{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+}
+.fotoartist4{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+}
+.fotoartist5{
+    border: 40px;
+    border-color: aqua;
+    justify-content: center;
+    margin-left: 41%;
+}
+.temasalbum li{
+justify-content: center;
+margin-left: 45%;
+}
+.temasalbum2 li{
+    justify-content: center;
+    margin-left: 45%;
+}
+.temasalbum3 li{
+    justify-content: center;
+    margin-left: 45%;
+}
+.temasalbum4 li{
+    justify-content: center;
+    margin-left: 45%;
+}
+.temasalbum5 li{
+    justify-content: center;
+    margin-left: 45%;
+}
 .acciones{
 display: block;
 border-style: solid red 3px;
