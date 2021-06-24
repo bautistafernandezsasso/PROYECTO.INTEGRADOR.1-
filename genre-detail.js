@@ -24,7 +24,7 @@ fetch (apiGenres)
     infoGen = document.querySelector(".genreinfo");
     
    Gen.innerHTML +=`<h2>${datos.data[7].name}</h2> <img src="${datos.data[7].picture_medium}">`;
-    
+   
    /*pop*/
    Gen2 = document.querySelector(".genrename2");
    infoGen2 = document.querySelector(".genreinfo2");
