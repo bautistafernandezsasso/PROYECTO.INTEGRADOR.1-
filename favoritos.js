@@ -47,8 +47,6 @@ let botonSacar = document.querySelector('.sacarfav1');
 
     Fav2 = document.querySelector(".fav2")
    
-
-
     let fotoFav2 = JSON.parse(localStorage.getItem('foto2'))
     let nombreFav2 = JSON.parse(localStorage.getItem('nombre2'))
     Fav2.innerHTML += ` <h2>${nombreFav2}</h2> <a href="detail-track-2.html"> <img src="${fotoFav2}"> </a> `
