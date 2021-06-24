@@ -38,11 +38,12 @@ fetch (apiPlaylist)
         e.preventDefault();
         localStorage.setItem('foto2' , JSON.stringify(`${datos.tracks.data[0].album.cover_medium}`));
         localStorage.setItem('nombre2' , JSON.stringify(`${datos.tracks.data[0].title}`));
-    
-
-    
-
     })
+    
+    
+    
+    
+    
     .catch(function(error){
 console.log(error)
     })
