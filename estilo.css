@@ -402,13 +402,6 @@ background-position: top right;
 }
 
 
-
-.cajaRock{
-
-    flex-direction: column;
-    align-items: center;
-
-}
 .fotoartista{
 border: 40px;
 border-color: aqua;
@@ -501,19 +494,19 @@ margin-left: 45%;
     margin-left: 45%;
 }
 .fotoAr{
-margin-left: 42%;
+justify-content: space-evenly;
 }
 .fotoAr2{
-margin-left: 42%;    
+    justify-content: space-evenly; 
 }
 .fotoAr3{
-margin-left: 42%;    
+    justify-content: space-evenly; 
 }
 .fotoAr4{
-margin-left: 42%; 
+    justify-content: space-evenly; 
 }
 .fotoAr5{
-margin-left: 42%; 
+ justify-content: space-evenly; 
 }
 .acciones{
 display: block;
@@ -544,7 +537,34 @@ border-style: solid red 3px;
     flex-direction: row;
     justify-content: space-around;
 }
-.genrename{
-    border-width: 20px;
-    border-color: brown;
+.btnPlay{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay2{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay3{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay4{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay5{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+
+.cancionesTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

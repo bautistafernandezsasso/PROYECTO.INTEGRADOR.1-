@@ -27,9 +27,6 @@ fetch (apiPlaylist)
     musicPlayer = document.querySelector(".musicplayer");
     botonPlay = document.querySelector(".btnPlay")
 
-
-
-
     fotoAr.innerHTML +=`
     <img src="${datos.tracks.data[1].album.cover_medium}">`;
     
@@ -45,15 +42,13 @@ fetch (apiPlaylist)
     
     
     })
+
     fotoAr2 = document.querySelector(".fotoartista2");
     nombreAr2 = document.querySelector(".nombreartista2");
     nombreCancion2 = document.querySelector(".nombrecancion2");
     nombreDisco2 = document.querySelector(".nombredisco2");
     musicPlayer2 = document.querySelector(".musicplayer2");
     botonPlay2 = document.querySelector(".btnPlay2")
-
-
-
 
     fotoAr2.innerHTML +=`
     <img src="${datos.tracks.data[0].album.cover_medium}">`;
@@ -62,7 +57,7 @@ fetch (apiPlaylist)
     nombreAr2.innerHTML +=`<h2>${datos.tracks.data[0].artist.name}</h2>`;
     nombreDisco2.innerHTML += `<h2>${datos.tracks.data[0].album.title}</h2>`;
     musicPlayer2.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.tracks.data[0].id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
-
+  
 
     
 

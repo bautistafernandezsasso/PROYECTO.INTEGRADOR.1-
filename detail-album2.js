@@ -32,7 +32,7 @@ fetch (apiAlbums)
     
     nombreAlb2.innerHTML +=`<h2>${datos.title}</h2>`;
     nombreArt2.innerHTML +=`<a href="detail-artista.html"><h2>${datos.artist.name}</h2></a>`;
-    nombreGen2.innerHTML += `<h2>${datos.genres.data[0].name}</h2>`;
+    nombreGen2.innerHTML += `<a href="genero.html"><h2>${datos.genres.data[0].name}</h2></a>`;
     fechaAlb2.innerHTML += `<h2>${datos.release_date}</h2>`;
     listaTemas2.innerHTML += `<li>${datos.tracks.data[0].title}</li>
     <li>${datos.tracks.data[1].title}</li>

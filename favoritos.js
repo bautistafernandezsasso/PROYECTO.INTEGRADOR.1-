@@ -26,16 +26,28 @@ fetch (apiPlaylist)
    
 let botonSacar = document.querySelector('.sacarfav1');
 
-    let fotoFav1 = JSON.parse(localStorage.getItem('foto1'))
-    let nombreFav1 = JSON.parse(localStorage.getItem('nombre1'))
+    let fotoFav1 = JSON.parse(localStorage.getItem('foto1'));
+    let nombreFav1 = JSON.parse(localStorage.getItem('nombre1'));
+    console.log(nombreFav1)
 
-    /*if(localStorage.getItem(nombreFav1) != 'null'){
-        Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
-    }else{
+    if(nombreFav1 === null){
         Fav1.innerHTML += ` <h2></h2> <a href=""> <img src=""> </a> `
-    }*/
+    }else{
+        Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
+    }
     
-    Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
+    if(nombreFav1 === null){
+        Fav1.innerHTML += ` <h2></h2> <a href=""> <img src=""> </a> `
+    }else{
+        Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
+    }
+
+    if(nombreFav1 === null){
+        Fav1.innerHTML += ` <h2></h2> <a href=""> <img src=""> </a> `
+    }else{
+        Fav1.innerHTML += ` <h2>${nombreFav1}</h2> <a href="detail-track-1.html"> <img src="${fotoFav1}"> </a> ` 
+    }
+   
     
      botonSacar.addEventListener('click', function(){
         localStorage.removeItem('foto1');
@@ -51,8 +63,13 @@ let botonSacar = document.querySelector('.sacarfav1');
     let nombreFav2 = JSON.parse(localStorage.getItem('nombre2'))
     Fav2.innerHTML += ` <h2>${nombreFav2}</h2> <a href="detail-track-2.html"> <img src="${fotoFav2}"> </a> `
 
+    Fav3 = document.querySelector(".fav3")
+   
+    let fotoFav3 = JSON.parse(localStorage.getItem('foto3'))
+    let nombreFav3 = JSON.parse(localStorage.getItem('nombre3'))
+    Fav3.innerHTML += ` <h2>${nombreFav3}</h2> <a href="detail-track-3.html"> <img src="${fotoFav3}"> </a> `
 
-
+    
     
 
     })
