@@ -417,4 +417,12 @@ border-style: solid red 3px;
 .musicplayer{
     justify-content: center;
 }
-
+.genres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.genrename{
+    border-width: 20px;
+    border-color: brown;
+}

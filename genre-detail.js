@@ -19,17 +19,31 @@ fetch (apiGenres)
     })
     .then(function(datos){
     console.log(datos)
-   
-    fotoGen = document.querySelector(".genrefoto");
-    nombreGen = document.querySelector(".genrename");
+  /*alternativo*/ 
+    Gen = document.querySelector(".genrename");
     infoGen = document.querySelector(".genreinfo");
     
-  fotoAr2.innerHTML +=`
-    <img src="${datos.tracks.data[0].album.cover_medium}">`;
+   Gen.innerHTML +=`<h2>${datos.data[7].name}</h2> <img src="${datos.data[7].picture_medium}">`;
     
-    nombreCancion2.innerHTML +=`<h2>${datos.tracks.data[0].title}</h2>`;
-    nombreAr2.innerHTML +=`<a href="detail-artista.html"><h2>${datos.tracks.data[0].artist.name}</h2></a>`;
-    nombreDisco2.innerHTML += `<a href="detail-album2.html"><h2>${datos.tracks.data[0].album.title}</h2></a>`;
+   /*pop*/
+   Gen2 = document.querySelector(".genrename2");
+   infoGen2 = document.querySelector(".genreinfo2");
+   
+  Gen2.innerHTML +=`<h2>${datos.data[1].name}</h2> <img src="${datos.data[1].picture_medium}">`;
+    
+   /*rock*/
+   Gen3 = document.querySelector(".genrename3");
+   infoGen3 = document.querySelector(".genreinfo3");
+   
+  Gen3.innerHTML +=`<h2>${datos.data[4].name}</h2> <img src="${datos.data[4].picture_medium}">`;
+    /*latin*/
+    Gen4 = document.querySelector(".genrename4");
+    infoGen4 = document.querySelector(".genreinfo4");
+    
+   Gen4.innerHTML +=`<h2>${datos.data[2].name}</h2> <img src="${datos.data[2].picture_medium}">`;
+
+
+    
    
     
 })
