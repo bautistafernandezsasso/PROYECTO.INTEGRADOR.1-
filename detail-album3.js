@@ -31,8 +31,8 @@ fetch (apiAlbums)
     <img src="${datos.cover_medium}">`;
     
     nombreAlb3.innerHTML +=`<h2>${datos.title}</h2>`;
-    nombreArt3.innerHTML +=`<h2>${datos.artist.name}</h2>`;
-    nombreGen3.innerHTML += `<h2>${datos.genres.data[0].name}</h2>`;
+    nombreArt3.innerHTML +=`<a href="detail-artista-2.html"><h2>${datos.artist.name}</h2></a>`;
+    nombreGen3.innerHTML += `<a href="genero.html"><h2>${datos.genres.data[0].name}</h2></a>`;
     fechaAlb3.innerHTML += `<h2>${datos.release_date}</h2>`;
     listaTemas3.innerHTML += `<li>${datos.tracks.data[0].title}</li>
     <li>${datos.tracks.data[1].title}</li>
