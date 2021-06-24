@@ -17,10 +17,10 @@ const proxy = 'https://cors-anywhere.herokuapp.com/';
 /* apiArtista = `${proxy}https://api.deezer.com/artist/${IdArtista}/`
 apiArtistaCanciones = `${proxy}https://api.deezer.com/artist/${IdArtista}/top` */
 
-apiArtista1 = `${proxy}https://api.deezer.com/artist/384236/`
+apiArtista3 = `${proxy}https://api.deezer.com/artist/4902904/`
 
 
-fetch(apiArtista1)
+fetch(apiArtista3)
 .then(function(response){
     return response.json()
 
@@ -28,14 +28,14 @@ fetch(apiArtista1)
 .then(function(datos){
 console.log(datos)
 
-fotoAr = document.querySelector(".fotoAr");
-nombreAr = document.querySelector(".nombreAr")
-
-fotoAr.innerHTML +=`
+fotoAr3 = document.querySelector(".fotoAr3");
+nombreAr3 = document.querySelector(".nombreAr3")
+topAlbums3 = document.querySelector('.topalbums3')
+fotoAr3.innerHTML +=`
 <img src="${datos.picture_medium}">`;
 
-nombreAr.innerHTML +=`<h2>${datos.name}</h2>`;
-
+nombreAr3.innerHTML +=`<h2>${datos.name}</h2>`;
+/*topAlbums.innerHTML += `<li>${}`*/
 
 
 
