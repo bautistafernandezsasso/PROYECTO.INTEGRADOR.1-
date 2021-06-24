@@ -379,19 +379,19 @@ margin-left: 45%;
     margin-left: 45%;
 }
 .fotoAr{
-margin-left: 42%;
+justify-content: space-evenly;
 }
 .fotoAr2{
-margin-left: 42%;    
+    justify-content: space-evenly; 
 }
 .fotoAr3{
-margin-left: 42%;    
+    justify-content: space-evenly; 
 }
 .fotoAr4{
-margin-left: 42%; 
+    justify-content: space-evenly; 
 }
 .fotoAr5{
-margin-left: 42%; 
+ justify-content: space-evenly; 
 }
 .acciones{
 display: block;
@@ -418,3 +418,8 @@ border-style: solid red 3px;
     justify-content: center;
 }
 
+.cancionesTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
