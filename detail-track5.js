@@ -31,8 +31,8 @@ fetch (apiPlaylist)
     <img src="${datos.tracks.data[4].album.cover_medium}">`;
     
     nombreCancion5.innerHTML +=`<h2>${datos.tracks.data[4].title}</h2>`;
-    nombreAr5.innerHTML +=`<h2>${datos.tracks.data[4].artist.name}</h2>`;
-    nombreDisco5.innerHTML += `<h2>${datos.tracks.data[4].album.title}</h2>`;
+    nombreAr5.innerHTML +=`<a href="detail-artista-4.html"><h2>${datos.tracks.data[4].artist.name}</a></h2>`;
+    nombreDisco5.innerHTML += `<a href="detail-album5.html"><h2>${datos.tracks.data[4].album.title}</h2></a>`;
     musicPlayer5.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.tracks.data[4].id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
 
 

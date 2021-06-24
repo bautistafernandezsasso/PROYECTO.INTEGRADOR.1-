@@ -31,7 +31,7 @@ fetch (apiAlbums)
     <img src="${datos.cover_medium}">`;
     
     nombreAlb4.innerHTML +=`<h2>${datos.title}</h2>`;
-    nombreArt4.innerHTML +=`<h2>${datos.artist.name}</h2>`;
+    nombreArt4.innerHTML +=`<a href="detail-artista-5.html"><h2>${datos.artist.name}</h2></a>`;
     nombreGen4.innerHTML += `<h2>${datos.genres.data[0].name}</h2>`;
     fechaAlb4.innerHTML += `<h2>${datos.release_date}</h2>`;
     listaTemas4.innerHTML += `<li>${datos.tracks.data[0].title}</li>
@@ -41,15 +41,7 @@ fetch (apiAlbums)
     <li>${datos.tracks.data[4].title}</li>
     <li>${datos.tracks.data[5].title}</li>
     <li>${datos.tracks.data[6].title}</li>
-    <li>${datos.tracks.data[7].title}</li>
-    <li>${datos.tracks.data[8].title}</li>
-    <li>${datos.tracks.data[9].title}</li>
-    <li>${datos.tracks.data[10].title}</li>
-    <li>${datos.tracks.data[11].title}</li>
-    <li>${datos.tracks.data[12].title}</li>
-    <li>${datos.tracks.data[13].title}</li>
-    <li>${datos.tracks.data[14].title}</li>
-    <li>${datos.tracks.data[15].title}</li>`;
+    <li>${datos.tracks.data[7].title}</li>`;
     
     
 
