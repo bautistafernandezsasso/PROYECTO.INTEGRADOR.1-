@@ -415,7 +415,29 @@ border-style: solid red 3px;
     flex-direction: row;
     justify-content: space-around;
 }
-.genreinfo{
-
-width: 100%;
+.btnPlay{
+    border-radius: 15px ;
+    background-color: #000;
+     
 }
+.btnPlay2{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay3{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay4{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+.btnPlay5{
+    border-radius: 15px ;
+    background-color: #000;
+     
+}
+
