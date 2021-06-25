@@ -60,6 +60,26 @@
     .then(function(datos){
         console.log(datos)
     
+
+        for (let index = 0; index < 5; index++) {
+            cancionTop = document.querySelector('.cancionTop'+[index]);
+            cancionTop.innerHTML +=`
+    <h3>${datos.data[index].title}<h3><img src=${datos.data[index].album.cover}>`
+    botonTrack = document.querySelector('.botom'+[index])
+    botonTrack.addEventListener('click', function(){
+        localStorage.removeItem('Track');
+        localStorage.setItem('Track' , JSON.stringify(`${datos.data[index].id}`));
+        window.location.href = 'detail-track-busqueda.html';  
+    
+    
+    });
+        }
+
+
+
+
+        /*
+
 cancionTop1 = document.querySelector('.cancionTop1')
 cancionTop2 = document.querySelector('.cancionTop2')
 cancionTop3 = document.querySelector('.cancionTop3')
@@ -130,7 +150,7 @@ botonTrack5.addEventListener('click', function(){
 });
 
 
-    
+    */
     
     
     })

@@ -8,78 +8,22 @@ navToggle.addEventListener("click",() =>{
     navMenu.classList.toggle("nav-menu_visible");
 })
 
-/*generos*/
 
-const proxy = 'https://cors-anywhere.herokuapp.com/';
-let api = `${proxy}https://api.deezer.com/genre/152`; /*genero: rock */
-
-
-let buscador = document.querySelector("#form2")
-buscador.addEventListener('search', function(e) {
+let botomBuscar = document.getElementById("btnbuscar")
+let buscador = document.getElementById("form2")
+botomBuscar.addEventListener('click', function(e) {
     e.preventDefault();
+    if (buscador.value === ""){ 
     alert ("Debes escribir!");
- if ( buscador.value < 3 || buscador.value === ""){ 
-    
- } else{ 
-    alert ("Debes escribir más de 3 caracteres");
+
+ }else{ 
+    window.location.href= `resultado_de_busqueda.html?resultado=${buscador.value}`; 
+console.log(buscador.lenght)
  }
-
+  
  
-    
- 
-
- 
- 
- 
-     
-   
- 
-
- /*<*/
-    
-
-})
-/*
-
-fetch(api)
-.then(function(response){
-    return response.json()
-
-})
-.then(function(datos){
-console.log(datos)
-caja1 = document.querySelector(".cajaRock");
-generoPagina = document.querySelector(".generoNombre")
-
-caja1.innerHTML +=`
-<img src="${datos.picture_medium}">`;
-
-generoPagina.innerHTML +=`<h2>${datos.name}</h2>`;
 
 
 })
-.catch(function(error){
-console.log(error)
-})
-
-
-
-
-
-
-
-
-
-/*
-
-let busqueda = document.querySelector("#form1");
-let valor = busqueda.value;
-busqueda.addEventListener('blur', function(){
-if (valor === '' || valor.lenght < 3){
-    busqueda.style.color = 'red';
-}else{
-    busqueda.style.color = 'green';
-}
-}) */
 
 })

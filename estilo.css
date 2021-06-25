@@ -664,27 +664,48 @@ margin-left: 45%;
     justify-content: center;
     margin-left: 45%;
 }
+
 .fotoAr{
-justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .fotoAr2{
-    justify-content: space-evenly; 
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .fotoAr3{
-    justify-content: space-evenly; 
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.fotoAr3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .fotoAr4{
-    justify-content: space-evenly; 
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .fotoAr5{
- justify-content: space-evenly; 
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.fotoAr6{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 .acciones{
 display: block;
 border-style: solid red 3px;
 
 }
-
 
 
 
