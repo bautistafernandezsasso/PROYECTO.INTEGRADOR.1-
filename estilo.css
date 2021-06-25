@@ -568,3 +568,10 @@ border-style: solid red 3px;
     flex-direction: row;
     justify-content: space-around;
 }
+.fotoartista6{
+    justify-content: space-evenly;
+    margin-left: 42%;
+}
+.musicplayer6{
+    margin-left: 18%;
+}
