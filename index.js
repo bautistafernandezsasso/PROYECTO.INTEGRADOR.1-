@@ -13,16 +13,17 @@ navToggle.addEventListener("click",() =>{
 const proxy = 'https://cors-anywhere.herokuapp.com/';
 let api = `${proxy}https://api.deezer.com/genre/152`; /*genero: rock */
 
-
+let botonBuscarrr = document.querySelector("#btnbuscar")
 let buscador = document.querySelector("#form2")
-buscador.addEventListener('search', function(e) {
+botonBuscarrr.addEventListener('click', function(e) {
     e.preventDefault();
-    alert ("Debes escribir!");
- if ( buscador.value < 3 || buscador.value === ""){ 
-    
- } else{ 
+ if (buscador.value === ""){ 
+    alert ("Debes escribir!");  
+ } else if(buscador.value < 3){ 
     alert ("Debes escribir más de 3 caracteres");
- }
+}else{
+    window.location.href= 'resultadode_busqueda.html'
+}
 
  
     
