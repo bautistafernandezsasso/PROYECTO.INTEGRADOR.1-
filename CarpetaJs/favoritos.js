@@ -22,6 +22,33 @@ fetch (apiPlaylist)
     .then(function(datos){
     console.log(datos)
 
+
+for (let index = 0; index < 9; index++) {
+    Fav = document.querySelector('.fav'+[index])
+    sacarFav =document.querySelector('.sacarfav'+[index])
+    let fotoFav = JSON.parse(localStorage.getItem('foto'+[index]));
+    let nombreFav = JSON.parse(localStorage.getItem('nombre'+[index]));
+if(nombreFav === null){
+    Fav.innerHTML += ` <h2></h2> <a href=""> <img src=""> </a> `
+    sacarFav.innerHTML = `<h2></h2>`
+}else{
+    Fav.innerHTML += ` <h2>${nombreFav}</h2>  <img src="${fotoFav}"> </a> ` 
+    sacarFav.innerHTML = `<button>Remove</button>`
+}
+let botonSacar = document.querySelector('.sacarfav'+[index]);
+    
+     botonSacar.addEventListener('click', function(){
+        localStorage.removeItem('foto'+[index]);
+        localStorage.removeItem('nombre'+[index]);
+        (window.location.reload());
+       botonSacar.innerText = "Removed!";
+        botonSacar.style.color = "red";
+    });
+}
+
+
+/*
+
     Fav1 = document.querySelector(".fav1")
     Fav2 = document.querySelector(".fav2")
     Fav3 = document.querySelector(".fav3")
@@ -139,7 +166,7 @@ fetch (apiPlaylist)
        botonSacar5.innerText = "Removed!";
         botonSacar5.style.color = "red";
     });
-    
+    */
     
 
     })

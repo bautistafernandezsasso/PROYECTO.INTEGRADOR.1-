@@ -16,7 +16,6 @@ window.addEventListener('load',function(){
 console.log(TrackBusqueda)
 
 
-
 fetch (`${proxy}https://api.deezer.com/track/${TrackBusqueda}`)                                           
     .then(function(response){
         return response.json();
@@ -42,12 +41,28 @@ fetch (`${proxy}https://api.deezer.com/track/${TrackBusqueda}`)
     nombreAr6.innerHTML +=`<h2>${datos.artist.name}</h2>`;
     nombreCancion6.innerHTML +=`<h2>${datos.title}</h2>`;
     nombreDisco6.innerHTML +=`<h2>${datos.album.title}</h2>`;
-   
+  
     musicPlayer6.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${datos.id}" width="1000" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
 
+    botonPlay6.addEventListener('click', function(e){
+    e.preventDefault();
 
     
-
+    for (let index = 0; index < 10; index++) {
+        if(localStorage.getItem('foto'+[index]) === null){
+            localStorage.setItem('foto'+[index] , JSON.stringify(`${datos.album.cover_medium}`));
+            localStorage.setItem('nombre'+[index] , JSON.stringify(`${datos.title}`));
+            break;
+        } else {
+      console.log('foto'+[index])
+        }
+        
+        
+    
+        
+    }
+    
+})
     })
     .catch(function(error){
 console.log(error)
