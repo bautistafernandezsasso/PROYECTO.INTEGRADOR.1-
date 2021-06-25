@@ -82,9 +82,12 @@ body {
 }
 
 .titulo {
-    text-align: center;
-    padding: 0 40px;
-    width: 100%;
+    color: ivory;
+	font-family: 'Spartan', sans-serif;
+	font-size: 50px;
+	letter-spacing: 7px;
+	text-align: right;
+    
 }
 
 .nav-toggle {
@@ -171,6 +174,147 @@ to{
     opacity: 1;
  
 }
+}
+.botom1 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+}
+ .botom2 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+}
+
+ .botom3 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+}
+
+
+ .botom4 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+}
+.botom5 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+
+ /* Estilo al botón de busqueda que se encuentra en la parte superior dereche*/
+ 
+}
+.botonbuscar { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.btnPlay1 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+
+}
+.btnPlay2 { text-decoration: none;
+    color: white;
+    background-image: linear-gradient(100deg, rgba(86, 13, 182, 0.644) 0%, rgba(16, 94, 65, 0.678) 100%);
+    padding: 12px;
+    border-radius:30px ;
+    animation: animacionboton 4s ease-in
+}
+@keyframes animacionbotoninfo1{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+ }
+
 }
 
 .btnPlay3 { text-decoration: none;
@@ -588,4 +732,11 @@ border-style: solid red 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.fotoartista6{
+    justify-content: space-evenly;
+    margin-left: 42%;
+}
+.musicplayer6{
+    margin-left: 18%;
 }
